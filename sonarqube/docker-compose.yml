@@ -1,0 +1,19 @@
+version: '3.7'
+
+services:
+  sonarqube:
+    image: sonarqube
+    container_name: sonarqube
+    ports:
+      - "9005:9000"
+    volumes:
+      - sonarqube_data_container:/opt/sonarqube/data
+      - sonarqube_extensions_container:/opt/sonarqube/extensions
+      - sonarqube_logs_container:/opt/sonarqube/logs
+      - sonarqube_temp_container:/opt/sonarqube/temp
+
+volumes: 
+  sonarqube_data_container:
+  sonarqube_extensions_container:
+  sonarqube_logs_container:
+  sonarqube_temp_container:

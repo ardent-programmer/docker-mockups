@@ -34,3 +34,6 @@ mysqldump -t -h{hostname} -u{mysql_user} --password={mysql_pw} {mysql_db} {mysql
     | mysql --host=127.0.0.1 -udevuser -pdevpassword {mysql_db}
 
 ```
+
+## Clear Data
+Reset data by removing the attached volume. see the main [README.md](../README.md#volumes
